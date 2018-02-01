@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+<% include blocks/header.ejs%>
+<h1>Новостная страница с ID: <%=newsId%></h1>
+<p>Title: <%=obj.title%></p>
+<ul>
+    <%obj.paragraphs.forEach(function(item){%>
+    <li><%=item%></li>
+    <%});%>
+</ul>
+</body>
+</html>
